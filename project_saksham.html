@@ -1,0 +1,202 @@
+[10:38 PM, 2/4/2019] Kanwar22: <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="movieweb.css">
+      <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+      <script type="text/javascript">
+     function openNav() {
+  document.getElementById("mySidenav").style.width = "30%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+      </script>  
+      <style type="text/css">
+      body{
+    background-color: black;
+}
+
+nav{
+    background-color: black;
+}
+.navbar-pos{
+   float: right;
+   
+}
+#menu li a{
+  text-decoration: none;
+  position: relative;
+  color: purple;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  padding: 14px 30px;
+  text-transform: uppercase;
+}
+#menu li a:before{
+  content: '';
+  width: 2000px;
+  position: absolute;
+  border-bottom: 5px solid purple;
+    bottom:0;
+  right: 350px;
+  transition: 0.7s all;
+}
+#menu li a:hover:before{
+  right: 0;
+   
+}
+
+
+
+/* Side navigation Slider */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: purple;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* Search box */
+
+.search-box{
+    position: absolute;
+    transform: translate(50%,50%);
+    background: purple;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    left: 750px;
+    top: 20px;
+}
+
+.search-box:hover > .search-txt{
+    width:140px;
+    padding: 0 6px;
+
+}
+
+.search-box:hover > .search-btn{
+    background: white;
+}
+    
+    .search-btn{
+         color: purple;
+        float: right;
+        width: 30px;
+        height: 20px;
+        border-radius:50%;
+        background: grey;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+    }
+
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: right;
+    padding: 0;
+    color: gray;
+    font-size: 16px;
+    transition: .7s;
+    line-height: 0px;
+    width: 0px;
+}
+        
+      </style>
+  </head>
+    <body>
+        
+        <!-- navigation-bar -->
+        <nav class="navbar navbar-expand-md navbar-light sticky-top">
+            <div id="mySidenav" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <a href="#">About</a>
+                 <a href="#">Services</a>
+                 <a href="#">Clients</a>
+                 <a href="#">Contact</a>
+                <a href="#">Sign UP</a>
+            </div>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand">
+            <img src="shopiologo.png" style="width: 100px;">
+            </a>
+            <span class="navbar-text"></span>
+                <div class="collapse navbar-collapse navbar-default navbar-pos" id="collapse_target">
+        <ul class="navbar-nav" id="menu">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="#">Category</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="#">offers</a>
+            </li>
+             <li class="nav-item">
+            <a class="nav-link" href="#">login</a>
+            </li>
+            <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+                </a>
+            </div>
+            </ul>
+            </div>
+            <span style="font-size:30px;cursor:pointer; color:purple" onclick="openNav()">&#9776; </span>
+            
+        </nav>
+           </body>
+</html>
